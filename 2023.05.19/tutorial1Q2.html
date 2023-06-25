@@ -1,0 +1,149 @@
+
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("mount.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    
+    form {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      background-color: yellow;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      margin-top: 0;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[type="text"],
+    select,
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid gray;
+    }
+    
+    .dob-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .dob-group label {
+      margin-top: 0;
+    }
+    
+    .radio-group {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .radio-group label {
+      white-space: nowrap;
+    }
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-top: 0;
+    }
+    
+    input[type="submit"],
+    input[type="button"] {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="button"]:hover {
+     
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Sign Up</h1>
+    <label for="name" style="display: inline-block; width: 50px;">First_name:</label>
+    <input type="text" id="name" name="name" required>
+     <label for="name" style="display: inline-block; width: 50px;">Last_name:</label>
+    <input type="text" id="name" name="name" required>
+    <label style="display: inline-block;">DOB:</label>
+    <div class="dob-group">
+      <select id="year" name="year" required>
+        <option value="" disabled selected>Year</option>
+        
+      </select>
+      <select id="month" name="month" required>
+        <option value="" disabled selected>Month</option>
+        
+      </select>
+      <select id="date" name="date" required>
+        <option value="" disabled selected>Date</option>
+        
+      </select>
+    </div>
+    
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required>
+        Male
+      </label>
+    
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="female" required>
+        Female
+      </label>
+    </div>
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Itali</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+<label for="email">Phone number:</label>
+    <input type="phone" id="phone" name="phone" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+<label for="password">Confirm Password:</label>
+    <input type="password" id="password" name="password" required>
+<br><br>
+    
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the terms and conditions</label>
+
+    
+    <input style= "background-color: green"; type="submit" value="Submit">
+    <input style= "background-color: red"; type="button" value="Cancel">
+  </form>
+</body>
+</html>
