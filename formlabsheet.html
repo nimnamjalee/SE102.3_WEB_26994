@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("background.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    
+    form {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      color: yellow;
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[type="text"],
+    select,
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid gray;
+    }
+    
+    input[type="radio"]
+    input[type="checkbox"] {
+      margin-top: 10px;
+    }
+    
+    input[type="submit"],
+    input[type="button"] {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="button"]:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Sign Up</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="dob">Date of Birth:</label>
+    <select id="dob" name="dob" required>
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the terms and conditions</label>
+    
+    <input type="submit" value="Submit">
+    <input type="button" value="Cancel">
+  </form>
+</body>
+</html>
