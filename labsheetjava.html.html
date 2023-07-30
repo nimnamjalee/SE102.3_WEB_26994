@@ -1,0 +1,27 @@
+<html>  
+    <head>  
+    <title>JavaScript Select Option Demo</title>  
+    <link href="css/selectbox.css" rel="style sheet">  
+    </head>  
+    <body>  
+    <form>  
+    <label for="color">Select a Color</label>  
+    <select id="color">  
+    <option value="1">Red</option>  
+    <option value="2">Yellow</option>  
+    <option value="3">Green</option>  
+    <option value="4">Blue</option>  
+    </select>  
+    <button id="btn">Get a Selected Index</button>  
+    </from>  
+    <script>  
+    const btn = document.querySelector('#btn');  
+    const sb = document.querySelector('#color');  
+    btn.onclick = (event) =>  
+    {  
+    event.preventDefault();  
+    alert(sb.selectedIndex);  
+    };  
+    </script>  
+    </body>  
+    </html>  
